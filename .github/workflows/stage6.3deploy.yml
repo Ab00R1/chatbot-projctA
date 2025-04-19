@@ -47,4 +47,6 @@ jobs:
           --force-update \
           --publisher Microsoft.Azure.Extensions \
           --settings '{"fileUris": []}' \
-          --protected-settings "{"commandToExecute": "export GITHUB_TOKEN=${{ secrets.TOKEN }} && sudo -u azureuser bash /home/azureuser/chatbot-projctA/update_app.sh"}"
+          --protected-settings "@.github/azure-settings.json"
+env:
+    TOKEN: ${{ secrets.TOKEN }}
