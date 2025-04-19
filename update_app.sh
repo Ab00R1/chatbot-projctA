@@ -6,7 +6,7 @@ date
 echo "Updating Python application on VM..."
 
 REPO_URL="https://github.com/Ab00R1/chatbot-projctA.git"
-BRANCH="main"
+BRANCH="stage6.2t"
 GITHUB_TOKEN=$TOKEN  # Passed securely via protectedSettings
 HOME_DIR=$(eval echo ~$USER)
 APP_DIR="$HOME_DIR/chatbot-projctA"
